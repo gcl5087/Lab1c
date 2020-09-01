@@ -1,23 +1,19 @@
+//Author: Grace Lavin gcl5087@psu.edu
+// Collaborator: Justin Tien - jst5381@psu.edu
+// Collaborator: Henry Radzikowksi - har5254@psu.edu
+// Collaborator: Ruilan Sun - rfs5748@psu.edu
+
 #include <stdio.h>
 #include <readline/readline.h> 
 
 int main(void) {
-  char *name = readline("Enter your name: ");
-  printf("Hello, %s!\n", name);
+  char *celsiusV = readline("Enter temperature in celsius: ");
+  
+  double doubleC = atof(celsiusV);
+
+  double fahrV = (1.8* (doubleC) + 32);
+
+  printf("%f° in Celsius is equivalent to %f° Fahrenheit.", doubleC, fahrV);
   return 0;
 
-
-
-  celsiusV = input("Enter temperature in celsius: ")
-
-
-celsiusV = float(celsiusV)
-
-fahrV = (1.8 *(celsiusV) + 32)
-
-print( str(celsiusV) + "° in Celsius is equivalent to " + str(fahrV) + "° Fahrenheit.")
-
-
-
-  
 }
